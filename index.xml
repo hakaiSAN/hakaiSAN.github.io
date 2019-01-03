@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>To Say Something Lovely is I just Love</title>
+    <link>https://hakaisan.github.io/</link>
+    <description>Recent content on To Say Something Lovely is I just Love</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 03 Jan 2019 00:31:24 +0900</lastBuildDate>
+    
+	<atom:link href="https://hakaisan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>環境整備始めたらめっちゃ疲れた話</title>
+      <link>https://hakaisan.github.io/post/first-create/</link>
+      <pubDate>Thu, 03 Jan 2019 00:31:24 +0900</pubDate>
+      
+      <guid>https://hakaisan.github.io/post/first-create/</guid>
+      <description>&lt;p&gt;こんにちこんばんは．&lt;/p&gt;
+
+&lt;p&gt;そろそろちゃんとやったことに対する貢献としてブログを書こうと思いたち，
+始めてみた今日この頃です．
+このブログでは基本的に技術的な内容は英語できっちり（？）書こうと思ってますが，
+日本語のときはゆるーっと書いていこうと思っています．&lt;/p&gt;
+
+&lt;p&gt;そんなわけで，タイトルの内容ですがめっちゃ疲れました（疲れたまま書いてます）．
+内容的には，&lt;a href=&#34;https://hakaisan.github.io/post/reinstall-homebrew/&#34;&gt;前のエントリ&lt;/a&gt;の個人的背景の補足です．&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Re-Installing Homebrew and Environment for High Sierra</title>
+      <link>https://hakaisan.github.io/post/reinstall-homebrew/</link>
+      <pubDate>Wed, 02 Jan 2019 20:54:53 +0900</pubDate>
+      
+      <guid>https://hakaisan.github.io/post/reinstall-homebrew/</guid>
+      <description>&lt;p&gt;Hello Everyone.&lt;/p&gt;
+
+&lt;p&gt;I used Apple Macbook Air privately from 2013 and setup environment for programming(Vim+Tmux+zplug+fzf).
+It is long time since I updated High Sierra from Yosemite(As you know, current newest OS version is Mojave), but I didn&amp;rsquo;t do environment by today.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>My Overview</title>
+      <link>https://hakaisan.github.io/page/about/</link>
+      <pubDate>Wed, 02 Jan 2019 20:29:02 +0900</pubDate>
+      
+      <guid>https://hakaisan.github.io/page/about/</guid>
+      <description> Name  Handle : Natsu GitHub : Click Below Github Icon !  My History(in English)  2012-2016 : Bachelor in Japanese University 2016-2018 : Master in Japanese University 2018 : Engineer Employee   Latest Education - M.S in Computer Science
+My History(in Japanese)  2012-2016 : どこかの学士課程 2016-2018 : どこかの修士課程 2018 : とある企業のエンジニア  My Skill  Speaking Languages : Japanese(Native), English(Intermediate) Programming Languages  Master : Verilog, C, C++, OpenCL, Python Intermediate : Java, Bash/Zsh Beginner : Ruby, CUDA  Specific Technology : Heterogenious Computing, High-Level Synthesis, FPGA Programming  Devices  OS : CentOS, RHEL, OS X, Windows 10  My Other Interesting(this is not Computing)  Music (Listening/Watching Concert)  LiSA fripSide Yoshino Nanjo(南條愛乃)  Drinking Gaming(Digital, Table/Board)  </description>
+    </item>
+    
+  </channel>
+</rss>

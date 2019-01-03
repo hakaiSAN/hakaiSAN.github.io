@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Japanese on To Say Something Lovely is I just Love</title>
+    <link>https://hakaisan.github.io/tags/japanese/</link>
+    <description>Recent content in Japanese on To Say Something Lovely is I just Love</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 03 Jan 2019 00:31:24 +0900</lastBuildDate>
+    
+	<atom:link href="https://hakaisan.github.io/tags/japanese/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>環境整備始めたらめっちゃ疲れた話</title>
+      <link>https://hakaisan.github.io/post/first-create/</link>
+      <pubDate>Thu, 03 Jan 2019 00:31:24 +0900</pubDate>
+      
+      <guid>https://hakaisan.github.io/post/first-create/</guid>
+      <description>&lt;p&gt;こんにちこんばんは．&lt;/p&gt;
+
+&lt;p&gt;そろそろちゃんとやったことに対する貢献としてブログを書こうと思いたち，
+始めてみた今日この頃です．
+このブログでは基本的に技術的な内容は英語できっちり（？）書こうと思ってますが，
+日本語のときはゆるーっと書いていこうと思っています．&lt;/p&gt;
+
+&lt;p&gt;そんなわけで，タイトルの内容ですがめっちゃ疲れました（疲れたまま書いてます）．
+内容的には，&lt;a href=&#34;https://hakaisan.github.io/post/reinstall-homebrew/&#34;&gt;前のエントリ&lt;/a&gt;の個人的背景の補足です．&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

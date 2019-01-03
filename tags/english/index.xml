@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>English on To Say Something Lovely is I just Love</title>
+    <link>https://hakaisan.github.io/tags/english/</link>
+    <description>Recent content in English on To Say Something Lovely is I just Love</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 02 Jan 2019 20:54:53 +0900</lastBuildDate>
+    
+	<atom:link href="https://hakaisan.github.io/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Re-Installing Homebrew and Environment for High Sierra</title>
+      <link>https://hakaisan.github.io/post/reinstall-homebrew/</link>
+      <pubDate>Wed, 02 Jan 2019 20:54:53 +0900</pubDate>
+      
+      <guid>https://hakaisan.github.io/post/reinstall-homebrew/</guid>
+      <description>&lt;p&gt;Hello Everyone.&lt;/p&gt;
+
+&lt;p&gt;I used Apple Macbook Air privately from 2013 and setup environment for programming(Vim+Tmux+zplug+fzf).
+It is long time since I updated High Sierra from Yosemite(As you know, current newest OS version is Mojave), but I didn&amp;rsquo;t do environment by today.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

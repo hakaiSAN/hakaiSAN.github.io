@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on To Say Something Lovely is I just Love</title>
+    <link>https://hakaisan.github.io/categories/</link>
+    <description>Recent content in Categories on To Say Something Lovely is I just Love</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://hakaisan.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
