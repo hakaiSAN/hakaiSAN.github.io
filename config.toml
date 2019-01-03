@@ -7,9 +7,10 @@ pygmentsStyle = "trac"
 pygmentsUseClasses = true
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
-#googleAnalytics = "XXX"
+googleAnalytics = "UA-131644595-1"
 canonifyurls = true
 publishdir = "public"
+disqusShortname="natsu-github-pages-comment"
 
 [Params]
 #  homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
