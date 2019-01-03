@@ -1,4 +1,4 @@
-baseurl = "https://hakaisan.github.io"
+baseurl = "https://hakaisan.github.io" 
 DefaultContentLanguage = "en"
 title = "To Say Something Lovely is I just Love"
 theme = "beautifulhugo"
