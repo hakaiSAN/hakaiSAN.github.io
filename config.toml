@@ -1,0 +1,45 @@
+baseurl = "https://hakaisan.github.io" 
+DefaultContentLanguage = "en"
+title = "To Say Something Lovely is I just Love"
+theme = "beautifulhugo"
+metaDataFormat = "yaml"
+pygmentsStyle = "trac"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+#googleAnalytics = "XXX"
+canonifyurls = true
+publishdir = "public"
+
+[Params]
+#  homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
+#  subtitle = "Build a beautiful and simple website in minutes"
+#  logo = "img/avatar-icon.png" # Expecting square dimensions
+#  favicon = "img/favicon.ico"
+  commit = false
+  rss = true
+  comments = true
+  readingTime = true
+  wordCount = false
+  useHLJS = true
+  socialShare = true
+  delayDisqus = true
+  showRelatedPosts = true
+#  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+
+[Author]
+  name = "Natsu"
+  website = "https://hakaisan.github.io"
+  github = "hakaiSAN"
+  #linkedin = "username"
+
+[[menu.main]]
+    name = "Blog"
+    url = ""
+    weight = 1
+
+[[menu.main]]
+    name = "About"
+    url = "page/about/"
+    weight = 3
+
