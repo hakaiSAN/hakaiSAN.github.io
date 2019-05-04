@@ -5,7 +5,7 @@
     <link>https://hakaisan.github.io/tags/</link>
     <description>Recent content in Tags on To Say Something Lovely is I just Love</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 02 Jan 2019 20:54:53 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 04 May 2019 16:42:52 +0900</lastBuildDate>
     
 	<atom:link href="https://hakaisan.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +13,7 @@
     <item>
       <title>English</title>
       <link>https://hakaisan.github.io/tags/english/</link>
-      <pubDate>Wed, 02 Jan 2019 20:54:53 +0900</pubDate>
+      <pubDate>Sat, 04 May 2019 16:42:52 +0900</pubDate>
       
       <guid>https://hakaisan.github.io/tags/english/</guid>
       <description></description>
@@ -25,6 +25,15 @@
       <pubDate>Wed, 02 Jan 2019 20:54:53 +0900</pubDate>
       
       <guid>https://hakaisan.github.io/tags/environment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Github Pages</title>
+      <link>https://hakaisan.github.io/tags/github-pages/</link>
+      <pubDate>Sat, 04 May 2019 16:42:52 +0900</pubDate>
+      
+      <guid>https://hakaisan.github.io/tags/github-pages/</guid>
       <description></description>
     </item>
     
@@ -47,6 +56,15 @@
     </item>
     
     <item>
+      <title>Hugo</title>
+      <link>https://hakaisan.github.io/tags/hugo/</link>
+      <pubDate>Sat, 04 May 2019 16:42:52 +0900</pubDate>
+      
+      <guid>https://hakaisan.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Japanese</title>
       <link>https://hakaisan.github.io/tags/japanese/</link>
       <pubDate>Thu, 03 Jan 2019 00:31:24 +0900</pubDate>
@@ -61,6 +79,15 @@
       <pubDate>Thu, 03 Jan 2019 00:31:24 +0900</pubDate>
       
       <guid>https://hakaisan.github.io/tags/personal-opinions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Travis Ci</title>
+      <link>https://hakaisan.github.io/tags/travis-ci/</link>
+      <pubDate>Sat, 04 May 2019 16:42:52 +0900</pubDate>
+      
+      <guid>https://hakaisan.github.io/tags/travis-ci/</guid>
       <description></description>
     </item>
     

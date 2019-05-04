@@ -5,17 +5,39 @@
     <link>https://hakaisan.github.io/post/</link>
     <description>Recent content in Posts on To Say Something Lovely is I just Love</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 03 Jan 2019 00:31:24 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 04 May 2019 16:42:52 +0900</lastBuildDate>
     
 	<atom:link href="https://hakaisan.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Blog Deployment Process Vol.2 </title>
+      <link>https://hakaisan.github.io/post/english/hugo-githubpages-travisci-v2/</link>
+      <pubDate>Sat, 04 May 2019 16:42:52 +0900</pubDate>
+      
+      <guid>https://hakaisan.github.io/post/english/hugo-githubpages-travisci-v2/</guid>
+      <description>&lt;p&gt;From Vol.1, this article is explaining for Hugo x GitHub Pages x Travis CI.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Blog Deployment Process Vol.1 </title>
+      <link>https://hakaisan.github.io/post/english/hugo-githubpages-travisci-v1/</link>
+      <pubDate>Sat, 04 May 2019 15:42:52 +0900</pubDate>
+      
+      <guid>https://hakaisan.github.io/post/english/hugo-githubpages-travisci-v1/</guid>
+      <description>&lt;p&gt;Hello Everyone.&lt;/p&gt;
+
+&lt;p&gt;Today, I&amp;rsquo;d like to talk about my blog deployment process.
+It is the first time that I create webblogs and so I don&amp;rsquo;t know
+any knowledge(Actually, I needed 2 days to deploy this blog), I&amp;rsquo;m sorry that having mistakes, and Your comments are welcomed.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>環境整備始めたらめっちゃ疲れた話</title>
-      <link>https://hakaisan.github.io/post/first-create/</link>
+      <link>https://hakaisan.github.io/post/japanese/first-create/</link>
       <pubDate>Thu, 03 Jan 2019 00:31:24 +0900</pubDate>
       
-      <guid>https://hakaisan.github.io/post/first-create/</guid>
+      <guid>https://hakaisan.github.io/post/japanese/first-create/</guid>
       <description>&lt;p&gt;こんにちこんばんは．&lt;/p&gt;
 
 &lt;p&gt;そろそろちゃんとやったことに対する貢献としてブログを書こうと思いたち，
@@ -24,15 +46,15 @@
 日本語のときはゆるーっと書いていこうと思っています．&lt;/p&gt;
 
 &lt;p&gt;そんなわけで，タイトルの内容ですがめっちゃ疲れました（疲れたまま書いてます）．
-内容的には，&lt;a href=&#34;https://hakaisan.github.io/post/reinstall-homebrew/&#34;&gt;前のエントリ&lt;/a&gt;の個人的背景の補足です．&lt;/p&gt;</description>
+内容的には，&lt;a href=&#34;https://hakaisan.github.io/post/english/reinstall-homebrew/&#34;&gt;前のエントリ&lt;/a&gt;の個人的背景の補足です．&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Re-Installing Homebrew and Environment for High Sierra</title>
-      <link>https://hakaisan.github.io/post/reinstall-homebrew/</link>
+      <link>https://hakaisan.github.io/post/english/reinstall-homebrew/</link>
       <pubDate>Wed, 02 Jan 2019 20:54:53 +0900</pubDate>
       
-      <guid>https://hakaisan.github.io/post/reinstall-homebrew/</guid>
+      <guid>https://hakaisan.github.io/post/english/reinstall-homebrew/</guid>
       <description>&lt;p&gt;Hello Everyone.&lt;/p&gt;
 
 &lt;p&gt;I used Apple Macbook Air privately from 2013 and setup environment for programming(Vim+Tmux+zplug+fzf).

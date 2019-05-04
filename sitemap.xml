@@ -3,12 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://hakaisan.github.io/post/first-create/</loc>
+    <loc>https://hakaisan.github.io/post/english/hugo-githubpages-travisci-v2/</loc>
+    <lastmod>2019-05-04T16:42:52+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hakaisan.github.io/post/english/hugo-githubpages-travisci-v1/</loc>
+    <lastmod>2019-05-04T15:42:52+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hakaisan.github.io/post/japanese/first-create/</loc>
     <lastmod>2019-01-03T00:31:24+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hakaisan.github.io/post/reinstall-homebrew/</loc>
+    <loc>https://hakaisan.github.io/post/english/reinstall-homebrew/</loc>
     <lastmod>2019-01-02T20:54:53+09:00</lastmod>
   </url>
   
@@ -19,7 +29,7 @@
   
   <url>
     <loc>https://hakaisan.github.io/</loc>
-    <lastmod>2019-01-03T00:31:24+09:00</lastmod>
+    <lastmod>2019-05-04T16:42:52+09:00</lastmod>
   </url>
   
   <url>
@@ -29,13 +39,19 @@
   
   <url>
     <loc>https://hakaisan.github.io/tags/english/</loc>
-    <lastmod>2019-01-02T20:54:53+09:00</lastmod>
+    <lastmod>2019-05-04T16:42:52+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hakaisan.github.io/tags/environment/</loc>
     <lastmod>2019-01-02T20:54:53+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hakaisan.github.io/tags/github-pages/</loc>
+    <lastmod>2019-05-04T16:42:52+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -48,6 +64,12 @@
   <url>
     <loc>https://hakaisan.github.io/tags/homebrew/</loc>
     <lastmod>2019-01-02T20:54:53+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hakaisan.github.io/tags/hugo/</loc>
+    <lastmod>2019-05-04T16:42:52+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -71,13 +93,19 @@
   
   <url>
     <loc>https://hakaisan.github.io/post/</loc>
-    <lastmod>2019-01-03T00:31:24+09:00</lastmod>
+    <lastmod>2019-05-04T16:42:52+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://hakaisan.github.io/tags/</loc>
-    <lastmod>2019-01-02T20:54:53+09:00</lastmod>
+    <lastmod>2019-05-04T16:42:52+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://hakaisan.github.io/tags/travis-ci/</loc>
+    <lastmod>2019-05-04T16:42:52+09:00</lastmod>
     <priority>0</priority>
   </url>
   

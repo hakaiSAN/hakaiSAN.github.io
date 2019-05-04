@@ -12,10 +12,10 @@
     
     <item>
       <title>Re-Installing Homebrew and Environment for High Sierra</title>
-      <link>https://hakaisan.github.io/post/reinstall-homebrew/</link>
+      <link>https://hakaisan.github.io/post/english/reinstall-homebrew/</link>
       <pubDate>Wed, 02 Jan 2019 20:54:53 +0900</pubDate>
       
-      <guid>https://hakaisan.github.io/post/reinstall-homebrew/</guid>
+      <guid>https://hakaisan.github.io/post/english/reinstall-homebrew/</guid>
       <description>&lt;p&gt;Hello Everyone.&lt;/p&gt;
 
 &lt;p&gt;I used Apple Macbook Air privately from 2013 and setup environment for programming(Vim+Tmux+zplug+fzf).

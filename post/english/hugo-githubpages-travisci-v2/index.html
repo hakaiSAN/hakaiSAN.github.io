@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Blog Deployment Process Vol.2  - To Say Something Lovely is I just Love</title>
+  <meta property="og:title" content="Blog Deployment Process Vol.2 " />
+  <meta name="twitter:title" content="Blog Deployment Process Vol.2 " />
+  <meta name="description" content="Hugo x GitHub Pages x Travis CI">
+  <meta property="og:description" content="Hugo x GitHub Pages x Travis CI">
+  <meta name="twitter:description" content="Hugo x GitHub Pages x Travis CI">
+  <meta name="author" content="Natsu"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "To Say Something Lovely is I just Love",
+    
+    "url": "https://hakaisan.github.io"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https://hakaisan.github.io"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://hakaisan.github.io",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https://hakaisan.github.io/post/english/hugo-githubpages-travisci-v2/",
+          "name": "Blog deployment process vol.2 "
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Natsu"
+  },
+  "headline": "Blog Deployment Process Vol.2 ",
+  "description" : "From Vol.1, this article is explaining for Hugo x GitHub Pages x Travis CI.
+",
+  "inLanguage" : "en",
+  "wordCount": 362,
+  "datePublished" : "2019-05-04T16:42:52",
+  "dateModified" : "2019-05-04T16:42:52",
+  "image" : "https://hakaisan.github.io",
+  "keywords" : [ "Hugo, GitHub Pages, Travis CI, English" ],
+  "mainEntityOfPage" : "https://hakaisan.github.io/post/english/hugo-githubpages-travisci-v2/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https://hakaisan.github.io",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https://hakaisan.github.io",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Blog Deployment Process Vol.2 " />
+<meta property="og:description" content="Hugo x GitHub Pages x Travis CI">
+<meta property="og:url" content="https://hakaisan.github.io/post/english/hugo-githubpages-travisci-v2/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="To Say Something Lovely is I just Love" />
+  <meta name="twitter:title" content="Blog Deployment Process Vol.2 " />
+  <meta name="twitter:description" content="Hugo x GitHub Pages x Travis CI">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://hakaisan.github.io/post/english/hugo-githubpages-travisci-v2/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="To Say Something Lovely is I just Love" />
+
+  <meta name="generator" content="Hugo 0.53" />
+  <link rel="alternate" href="https://hakaisan.github.io/index.xml" type="application/rss+xml" title="To Say Something Lovely is I just Love">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://hakaisan.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://hakaisan.github.io/css/highlight.min.css" /><link rel="stylesheet" href="https://hakaisan.github.io/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-131644595-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://hakaisan.github.io">To Say Something Lovely is I just Love</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="https://hakaisan.github.io/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="https://hakaisan.github.io/page/about/">About</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>Blog Deployment Process Vol.2 </h1>
+              
+              
+              
+                
+                  <h2 class="post-subheading">Hugo x GitHub Pages x Travis CI</h2>
+                
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on May 4, 2019
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
+  
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Natsu
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>From Vol.1, this article is explaining for Hugo x GitHub Pages x Travis CI.</p>
+
+<h2 id="github-pages-setting">GitHub Pages Setting</h2>
+
+<p><a href="https://pages.github.com/">GitHub Pages</a> connects directly with GitHub Repositories and free to use.
+GitHub Pages set <strong>&lt;username&gt;.github.io</strong> (My case:hakaisan.github.io) as the top page.<br />
+If you set the repository name is the same as <strong>&lt;username&gt;.github.io</strong>, GitHub publishes automatically the blog in GitHub Pages.</p>
+
+<p>There some points you should take care for.</p>
+
+<ul>
+<li><strong>master</strong> branch is the only branch to be used to open.</li>
+<li>The source code in master branch <strong>have to be ready to open</strong>.
+Note : They are only the settings for <strong>&lt;username&gt;.github.io</strong></li>
+</ul>
+
+<p>The second column means we have to prepare deployed codes to be able to publish.
+Deployment mustn&rsquo;t have environment dependencies between builds and productions,
+and so we shouldn&rsquo;t make them on our side.</p>
+
+<p>Thus, I use Travis CI as auto deployment tool and have two branches in the GitHub repository.</p>
+
+<ul>
+<li>master : to publish articles in GitHub Pages from Travis CI</li>
+<li>development : the full original source branch for me</li>
+</ul>
+
+<h2 id="auto-deployment-through-travis-ci">Auto Deployment through Travis CI</h2>
+
+<p>You have to set up settings for both repository and Travis CI site.</p>
+
+<h3 id="repository-side">Repository Side</h3>
+
+<p>At first, in <strong><em>Settings -&gt; Developer settings -&gt; Personal access Tokens -&gt; Generate new token</em></strong>, We can get the new access token for GitHub.
+The scope for Travis CI is only <strong>repo</strong>.</p>
+
+<p>The next is you describe <strong>.travis.yml</strong> in the top in the repository.
+My setting is here.
+<!-- #TODO ref to file --></p>
+<div class="highlight"><pre class="chroma"><code class="language-yml" data-lang="yml">language<span class="p">:</span><span class="w"> </span>bash<span class="w">
+</span><span class="w">
+</span><span class="w"></span>env<span class="p">:</span><span class="w">
+</span><span class="w">  </span>global<span class="p">:</span><span class="w">
+</span><span class="w">    </span>-<span class="w"> </span>GIT_AUTHOR_EMAIL=kawai.arch.jk@gmail.com<span class="w">
+</span><span class="w">    </span>-<span class="w"> </span>GIT_AUTHOR_NAME=hakaiSAN<span class="w">
+</span><span class="w">    </span>-<span class="w"> </span>HUGO_VERSION=<span class="m">0.53</span><span class="w">
+</span><span class="w">    </span>-<span class="w"> </span>secure<span class="p">:</span><span class="w"> </span>&lt;omit<span class="sd">&gt;
+</span><span class="sd">    - GIT_URL=https://${GITHUB_TOKEN}@github.com/hakaiSAN/hakaisan.github.io.git</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span>install<span class="p">:</span><span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>wget<span class="w"> </span>https<span class="p">:</span>//github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz<span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>tar<span class="w"> </span>xzf<span class="w"> </span>hugo_${HUGO_VERSION}_Linux-64bit.tar.gz<span class="w">
+</span><span class="w">
+</span><span class="w"></span>before_deploy<span class="p">:</span><span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>git<span class="w"> </span>remote<span class="w"> </span>set-url<span class="w"> </span>origin<span class="w"> </span>${GIT_URL}<span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>git<span class="w"> </span>checkout<span class="w"> </span>development<span class="w"> 
+</span><span class="w">  </span>-<span class="w"> </span>git<span class="w"> </span>fetch<span class="w"> </span>origin<span class="w"> </span>master<span class="p">:</span>remotes/origin/master<span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>git<span class="w"> </span>worktree<span class="w"> </span>add<span class="w"> </span>-B<span class="w"> </span>master<span class="w"> </span>public<span class="w"> </span>origin/master<span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>./hugo<span class="w">
+</span><span class="w">
+</span><span class="w"></span>deploy<span class="p">:</span><span class="w">
+</span><span class="w">  </span>skip_cleanup<span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w">  </span>provider<span class="p">:</span><span class="w"> </span>script<span class="w">
+</span><span class="w">  </span>script<span class="p">:</span><span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>scripts/deploy.sh<span class="w"> </span><span class="cp">&amp;&amp;</span><span class="w"> </span>scripts/deploy.sh<span class="w">
+</span><span class="w">  </span>on<span class="p">:</span><span class="w">
+</span><span class="w">    </span>branch<span class="p">:</span><span class="w"> </span>development</code></pre></div>
+<p>Also, scripts/deploy.sh contents is here.
+<!-- #TODO ref to file --></p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
+</span><span class="cp"></span>
+<span class="nb">set</span> -eu
+<span class="nb">set</span> -o pipefail
+
+<span class="nb">cd</span> public
+git add --all
+git commit -m <span class="s1">&#39;Publish to GitHub Pages&#39;</span>
+git push origin master</code></pre></div>
+<h3 id="travis-side">Travis Side</h3>
+
+<p>It is very simple.<br />
+You just log on Travis CI via GitHub accounts and select/add your GitHub repository.
+If then, you can see deployment status as below.
+
+<link rel="stylesheet" href="https://hakaisan.github.io/css/hugo-easy-gallery.css" />
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="https://hakaisan.github.io/imgs/travis-ci-sample-result.png" alt="/imgs/travis-ci-sample-result.png"/>
+    </div>
+    <a href="https://hakaisan.github.io/imgs/travis-ci-sample-result.png" itemprop="contentUrl"></a>
+  </figure>
+</div>
+</p>
+
+<p>By here, you can complete all settings !
+The last task is pushing evaluation branch to GitHub !</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">  $ git push origin evaluation</code></pre></div>
+<p>If you completed all settings and pushing successfully, you can see the similar setting with below in GitHub.
+
+
+<div class="box" >
+  <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <div class="img">
+      <img itemprop="thumbnail" src="https://hakaisan.github.io/imgs/github-repo-pages.png" alt="/imgs/github-repo-pages.png"/>
+    </div>
+    <a href="https://hakaisan.github.io/imgs/github-repo-pages.png" itemprop="contentUrl"></a>
+  </figure>
+</div>
+</p>
+
+<p>Enjoy your blog life !</p>
+
+<p>References :</p>
+
+<ul>
+<li><a href="https://poyo.hatenablog.jp/entry/2018/06/08/145255">Hugo + Travis CI + Github pages and Custom Domain(Japanese Site)</a></li>
+<li><a href="https://docs.travis-ci.com/user/deployment/pages/">GitHub Pages Deployment</a></li>
+<li><a href="https://qiita.com/bgpat/items/d4ed0e499a9ab92c5741">How to setup the settings(Japanese site)</a></li>
+</ul>
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://hakaisan.github.io/tags/hugo/">Hugo</a>&nbsp;
+            
+              <a href="https://hakaisan.github.io/tags/github-pages/">GitHub Pages</a>&nbsp;
+            
+              <a href="https://hakaisan.github.io/tags/travis-ci/">Travis CI</a>&nbsp;
+            
+              <a href="https://hakaisan.github.io/tags/english/">English</a>&nbsp;
+            
+          </div>
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=https%3a%2f%2fhakaisan.github.io%2fpost%2fenglish%2fhugo-githubpages-travisci-v2%2f&amp;text=Blog%20Deployment%20Process%20Vol.2%20&amp;via=" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//plus.google.com/share?url=https%3a%2f%2fhakaisan.github.io%2fpost%2fenglish%2fhugo-githubpages-travisci-v2%2f" target="_blank" title="Share on Google Plus">
+          <i class="fab fa-google-plus"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fhakaisan.github.io%2fpost%2fenglish%2fhugo-githubpages-travisci-v2%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//reddit.com/submit?url=https%3a%2f%2fhakaisan.github.io%2fpost%2fenglish%2fhugo-githubpages-travisci-v2%2f&amp;title=Blog%20Deployment%20Process%20Vol.2%20" target="_blank" title="Share on Reddit">
+          <i class="fab fa-reddit"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fhakaisan.github.io%2fpost%2fenglish%2fhugo-githubpages-travisci-v2%2f&amp;title=Blog%20Deployment%20Process%20Vol.2%20" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fhakaisan.github.io%2fpost%2fenglish%2fhugo-githubpages-travisci-v2%2f&amp;title=Blog%20Deployment%20Process%20Vol.2%20" target="_blank" title="Share on StumbleUpon">
+          <i class="fab fa-stumbleupon"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fhakaisan.github.io%2fpost%2fenglish%2fhugo-githubpages-travisci-v2%2f&amp;description=Blog%20Deployment%20Process%20Vol.2%20" target="_blank" title="Share on Pinterest">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+              </div>
+            </section>
+        
+
+        
+          
+          
+          <h4 class="see-also">See also</h4>
+          <ul>
+          
+            <li><a href="https://hakaisan.github.io/post/english/hugo-githubpages-travisci-v1/">Blog Deployment Process Vol.1 </a></li>
+          
+            <li><a href="https://hakaisan.github.io/post/english/reinstall-homebrew/">Re-Installing Homebrew and Environment for High Sierra</a></li>
+          
+          </ul>
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://hakaisan.github.io/post/english/hugo-githubpages-travisci-v1/" data-toggle="tooltip" data-placement="top" title="Blog Deployment Process Vol.1 ">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+        
+          
+          <div class="disqus-comments">                  
+            <button id="show-comments" class="btn btn-default" type="button">Show <span class="disqus-comment-count" data-disqus-url="https://hakaisan.github.io/post/english/hugo-githubpages-travisci-v2">comments</span></button>
+            <div id="disqus_thread"></div>
+
+            <script type="text/javascript">
+              var disqus_config = function () {
+              this.page.url = 'https:\/\/hakaisan.github.io\/post\/english\/hugo-githubpages-travisci-v2';
+            };
+
+          </script>
+          </div>
+          
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="https://github.com/hakaiSAN" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            
+            <a href="https://hakaisan.github.io/index.xml" title="RSS">
+            
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="https://hakaisan.github.io">Natsu</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2019
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://hakaisan.github.io">To Say Something Lovely is I just Love</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="http://gohugo.io">Hugo v0.53</a> powered &nbsp;&bull;&nbsp; Theme by <a href="http://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> adapted to <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://hakaisan.github.io/js/main.js"></script>
+<script src="https://hakaisan.github.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script>
+<script src="https://hakaisan.github.io/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+<script type="text/javascript">
+$(function(){
+  $('#show-comments').on('click', function(){
+    var disqus_shortname = 'natsu-github-pages-comment';
+      
+    (function() {
+      var disqus = document.createElement('script'); 
+      disqus.type = 'text/javascript'; 
+      disqus.async = true;
+      disqus.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(disqus);
+    })();
+      
+    $(this).hide(); 
+    });
+  });
+      
+</script>
+<script id="dsq-count-scr" src="//natsu-github-pages-comment.disqus.com/count.js" async></script>
+
+
+
+
+  </body>
+</html>
+
