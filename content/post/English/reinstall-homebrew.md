@@ -1,6 +1,7 @@
 ---
 title: "Re-Installing Homebrew and Environment for High Sierra"
 date: 2019-01-02T20:54:53+09:00
+wordCount: true
 tags: ["Environment", "Homebrew", "High Sierra", "English"]
 ---
 
